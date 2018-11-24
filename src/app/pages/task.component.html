@@ -1,0 +1,65 @@
+<br>
+<h1 style="text-align: center;"><font color="#7887AB" face="Righteous">Task Yönetim Sistemi (Hoşgeldin <b style="color:#061539;">{{username}} </b> )</font></h1>
+
+<br><br><br><br><br><br>
+
+
+<div class="row">
+        <div class="col-sm-2"></div>
+        
+        <div class="col-sm-4">
+
+                <div class="card">
+                        <div class="card-body">
+                          <h5 color="#4F628E" face="Righteous" class="card-title">Yapılacak Görevler</h5>
+                            <br>
+
+                                     <table class="table">
+                                    <tbody *ngFor="let yaz of tasks">
+                                      <tr style="display:inline;">
+                                        <th>🔵{{yaz}}</th>
+                                      </tr>
+                                      <tr style="display:inline;">
+                                         <th><input (click)="deleteTask(yaz)" width="18" height="18" type="image" src="./../../assets/images/tick.png"/></th>
+                                     </tr>
+                                    </tbody>
+                                  </table>
+
+                </div>
+              </div>
+
+        </div>
+
+
+        <div class="col-sm-4">
+
+                <div class="card">
+                        <div class="card-body">
+                          <h5 color="#4F628E" face="Righteous" class="card-title">Tamamlanan Görevler</h5>
+                          <br>
+
+                             <table class="table">
+                                <tbody  *ngFor="let yaz1 of finished">
+                                  <tr>
+                                    <th>⚫{{yaz1}}</th>
+                                  </tr>
+                                </tbody>
+                              </table>
+
+                        </div>
+              </div>
+
+        </div>
+
+
+        <div class="col-sm-2"></div>
+
+
+        <div class="col-sm-4"></div>
+        <div class="col-sm-8">
+        <br><br>
+        <a routerLink="../addtask" style="background-color: #7887AB; border-color:#7887AB;" class="btn btn-primary">Yeni görev eklemek için tıklayın.</a>
+        &nbsp; &nbsp; &nbsp;
+        <a (click)="logOut()" style="background-color: #7887AB; border-color:#7887AB;" class="btn btn-primary">Çıkış yapmak için tıklayın.</a>
+    </div>
+</div>
