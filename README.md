@@ -1,13 +1,13 @@
-# Yapılacaklar Listesi Uygulaması
+# Angular To-Do Application
 
 
-### Anasayfa
+### Home Page
 
 ![img](resim1.png)
 
 
 
-### Kullanıcı Ekranı
+### User's Page
 
 ![img](resim2.png)
 
