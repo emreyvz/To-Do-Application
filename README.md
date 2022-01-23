@@ -13,4 +13,4 @@
 
 
 
-### Emre YAVUZ & Adem ÖZER
+### Emre YAVUZ
